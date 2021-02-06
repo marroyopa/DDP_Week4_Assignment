@@ -37,13 +37,13 @@ shinyServer(function(input, output) {
         dateto <- input$Period[2] 
         territory <- input$Territory
         if (territory == "Regions"){
-                region1 <- input$Region1
-                region2 <- input$Region2
-                graphtype <- 10
+            region1 <- input$Region1
+            region2 <- input$Region2
+            graphtype <- 10
         } else {
-                country1 <- input$Country1
-                country2 <- input$Country2
-                graphtype <- 20
+            country1 <- input$Country1
+            country2 <- input$Country2
+            graphtype <- 20
         }
         
         infotype <- input$CasesDeath
@@ -57,9 +57,9 @@ shinyServer(function(input, output) {
             datagraph <- data %>% 
                 filter(Date_reported >= datefrom & Date_reported <= dateto &
                            (region == region1 | region == region2)) %>%
-                            group_by(region, Date_reported) %>% 
-                            summarise(daily = sum(New_cases), 
-                                      accum = sum(Cumulative_cases))
+                group_by(region, Date_reported) %>% 
+                summarise(daily = sum(New_cases), 
+                          accum = sum(Cumulative_cases))
             
             plot_ly(data = datagraph, x=datagraph$Date_reported, 
                     y=datagraph$daily, type = 'scatter', mode = 'lines',
@@ -85,7 +85,6 @@ shinyServer(function(input, output) {
                        xaxis = list(title = "Days"), 
                        yaxis = list(title = "Daily Deaths"))    
         }
-        
     })
-
+    
 })

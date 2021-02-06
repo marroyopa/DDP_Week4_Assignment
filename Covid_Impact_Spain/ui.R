@@ -19,12 +19,12 @@ library(lubridate)
 # Define UI for application that draws the different graphs for every tab
 
 shinyUI(fluidPage(
-
+    
     shinyjs::useShinyjs(),
     
     # Application title
     titlePanel("Covid Impact Comparison"),
-
+    
     # Load and treat necessary data to run the App
     if(exists("data") == FALSE) {
         data <- read.csv("https://covid19.who.int/WHO-COVID-19-global-data.csv", 
@@ -62,7 +62,7 @@ shinyUI(fluidPage(
             radioButtons("CasesDeath", "Cases or Deaths:", 
                          choices = c("Cases", "Deaths"))
         ),
-
+        
         # Show a plot of the generated distribution
         mainPanel(
             tabsetPanel(type = "tabs", 
@@ -103,7 +103,8 @@ shinyUI(fluidPage(
                                     first week until the week selected.")),
                         tabPanel("Daily", br(), plotlyOutput("dailyPlot")), 
                         tabPanel("Accumulated", br(), plotlyOutput("accumPlot")) 
-                )
+            )
         )
     ))
 )
+
