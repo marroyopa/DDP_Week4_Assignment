@@ -14,8 +14,6 @@ library(plotly)
 library(dplyr)
 library(lubridate)
 
-
-
 # Define UI for application that draws the different graphs for every tab
 
 shinyUI(fluidPage(
