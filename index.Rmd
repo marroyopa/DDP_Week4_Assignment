@@ -10,13 +10,13 @@ output:
 
 ### Course Project Objectives
 
-1.- Create a Shiny App. This App has to have some form of input, some operations in the server with this input, and an output result of this operations.
+1.- Create a Shiny App. This App has to have some form of input, some operations in the server with this input, and an output result of this operations. 
 
-2.- Deploy the application on Rstudio's shiny server.
+2.- Deploy the application on Rstudio's shiny server. **[App HERE](https://marc-arroyo.shinyapps.io/who_covid_impact/)**
 
-3.- A reproducible pitch presentation pushed to Github or RPubs.
+3.- A reproducible pitch presentation pushed to Github or RPubs. **[Presentation HERE](https://marroyopa.github.io/DDP_Week4_Assignment/index.html)**
 
-4.- Share the code of both, App and Presentation pitch on Github.
+4.- Share the code of both, App and Presentation pitch on Github. **[Github repo HERE](https://github.com/marroyopa/DDP_Week4_Assignment/tree/gh-pages)**
 
 ### Proposed Solution 
 
