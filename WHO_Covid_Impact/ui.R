@@ -111,13 +111,7 @@ shinyUI(fluidPage(
                                  p("- Accumulated is the tab were accumulated
                                  reported data comparison can be found."),
                                  p("- Instructions is this tab with the 
-                                   instructions to use the app."),
-                                 h3("DISCLAIMER"),
-                                 p("In order to have fresh data, this app loads
-                                   a more than 100k lines file directly from the
-                                   WHO website, thats why first load takes more 
-                                   than 20 seconds, but the rest of 
-                                   manipulations are immediate."))
+                                   instructions to use the app."))
             )
         )
     )
