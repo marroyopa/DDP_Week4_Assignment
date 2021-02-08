@@ -1,5 +1,6 @@
 ---
 title: "DDP_Week4_Assignment"
+subtitle: "Covid-19 Impact Comparison"
 author: "Marc Arroyo"
 date: "08/02/2021"
 output:
