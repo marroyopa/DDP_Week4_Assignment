@@ -1,10 +1,15 @@
 #
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
+# This is the user-interface definition of the Shiny web application designed
+# by Marc Arroyo as a proposed solution for the course project of the fourth
+# week of the Johns Hopkins Univeristy course Developing Data Products in 
+# Coursera.
 #
-# Find out more about building applications with Shiny here:
+# The intention of the app is to compare Covid impact between countries or 
+# world regions in reported infection cases or deaths, using data directly 
+# extracted from the World Health Organization website. This information can be
+# downloaded in the following address:
 #
-#    http://shiny.rstudio.com/
+#    https://covid19.who.int/WHO-COVID-19-global-data.csv
 #
 
 library(shiny)
@@ -70,12 +75,13 @@ shinyUI(fluidPage(
                         tabPanel("Instructions", br(),
                                  h2("Instructions to use the App"),
                                  h3("Objectives"),
-                                 p("This app loads data directly from the WHO 
-                                   website of the daily impact of Covid-19 in 
-                                   every country of the world and allows to 
-                                   compare infections or deaths between two 
-                                   countries or two world areas, both in a 
-                                   daily or accumulated basis."),
+                                 p("This app loads data directly from the World 
+                                   Health Organization website of the daily 
+                                   impact of Covid-19 in every country of the 
+                                   world and allows to compare infections or 
+                                   deaths between two countries or two world 
+                                   areas, both in a daily or accumulated 
+                                   basis."),
                                  h3("Control Parameters"),
                                  p("Following controls are available to control 
                                    the app:"),
